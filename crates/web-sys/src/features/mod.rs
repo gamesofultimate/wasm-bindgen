@@ -1960,6 +1960,12 @@ mod gen_ExtDisjointTimerQuery;
 #[cfg(feature = "ExtDisjointTimerQuery")]
 pub use gen_ExtDisjointTimerQuery::*;
 
+#[cfg(feature = "ExtDisjointTimerQuery")]
+#[allow(non_snake_case)]
+mod gen_ExtDisjointTimerQueryWebGl2;
+#[cfg(feature = "ExtDisjointTimerQuery")]
+pub use gen_ExtDisjointTimerQueryWebGl2::*;
+
 #[cfg(feature = "ExtFragDepth")]
 #[allow(non_snake_case)]
 mod gen_ExtFragDepth;

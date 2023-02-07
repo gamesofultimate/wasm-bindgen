@@ -21,6 +21,8 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Throws]
   undefined postMessage(any message, optional sequence<object> transfer = []);
 
+  [Throws] long requestAnimationFrame(FrameRequestCallback callback);
+
   undefined close();
 
   attribute EventHandler onmessage;
