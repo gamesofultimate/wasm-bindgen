@@ -720,5 +720,25 @@ WebGL2RenderingContextBase includes WebGLRenderingContextBase;
 WebGL2RenderingContext includes WebGL2RenderingContextBase;
 
 [NoInterfaceObject]
+interface EXT_disjoint_timer_query_webgl2 {
+    const GLenum QUERY_COUNTER_BITS_EXT = 0x8864;
+    const GLenum CURRENT_QUERY_EXT = 0x8865;
+    const GLenum QUERY_RESULT_EXT = 0x8866;
+    const GLenum QUERY_RESULT_AVAILABLE_EXT = 0x8867;
+    const GLenum TIME_ELAPSED_EXT = 0x88BF;
+    const GLenum TIMESTAMP_EXT = 0x8E28;
+    const GLenum GPU_DISJOINT_EXT = 0x8FBB;
+
+    WebGLQuery? createQueryEXT();
+    undefined deleteQueryEXT(WebGLQuery? query);
+    [WebGLHandlesContextLoss] boolean isQueryEXT(WebGLQuery? query);
+    undefined beginQueryEXT(GLenum target, WebGLQuery query);
+    undefined endQueryEXT(GLenum target);
+    undefined queryCounterEXT(WebGLQuery query, GLenum target);
+    any getQueryEXT(GLenum target, GLenum pname);
+    any getQueryObjectEXT(WebGLQuery query, GLenum pname);
+};
+
+[NoInterfaceObject]
 interface EXT_color_buffer_float {
 };
