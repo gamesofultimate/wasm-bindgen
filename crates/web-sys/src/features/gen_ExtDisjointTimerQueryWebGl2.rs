@@ -3,7 +3,7 @@ use super::*;
 use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 extern "C" {
-    # [wasm_bindgen (is_type_of = | _ | false , extends = :: js_sys :: Object , js_name = EXT_disjoint_timer_query_webgl2 , typescript_type = "EXT_disjoint_timer_query")]
+    # [wasm_bindgen (is_type_of = | _ | false , extends = :: js_sys :: Object , js_name = EXT_disjoint_timer_query_webgl2 , typescript_type = "EXT_disjoint_timer_query_webgl2")]
     #[derive(Debug, Clone, PartialEq, Eq)]
     #[doc = "The `ExtDisjointTimerQueryWebGl2` class."]
     #[doc = ""]
