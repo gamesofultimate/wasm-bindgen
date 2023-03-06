@@ -197,4 +197,17 @@ extern "C" {
         store_names: &::wasm_bindgen::JsValue,
         mode: IdbTransactionMode,
     ) -> Result<IdbTransaction, JsValue>;
+    #[cfg(all(feature = "IdbTransaction", feature = "IdbTransactionMode",))]
+    # [wasm_bindgen (catch , method , structural , js_class = "IDBDatabase" , js_name = transaction)]
+    #[doc = "The `transaction()` method."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/IDBDatabase/transaction)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `IdbDatabase`, `IdbTransaction`, `IdbTransactionMode`*"]
+    pub fn transaction_with_str_sequence_and_mode_and_options(
+        this: &IdbDatabase,
+        store_names: &::wasm_bindgen::JsValue,
+        mode: IdbTransactionMode,
+        options: JsValue,
+    ) -> Result<IdbTransaction, JsValue>;
 }
