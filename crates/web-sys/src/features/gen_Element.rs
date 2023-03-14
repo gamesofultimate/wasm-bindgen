@@ -490,6 +490,13 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `Element`*"]
     pub fn request_pointer_lock(this: &Element);
+    # [wasm_bindgen (method , structural , js_class = "Element" , js_name = requestPointerLock)]
+    #[doc = "The `requestPointerLock()` method."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `Element`*"]
+    pub fn request_pointer_lock_async(this: &Element) -> ::js_sys::Promise;
     # [wasm_bindgen (method , structural , js_class = "Element" , js_name = scroll)]
     #[doc = "The `scroll()` method."]
     #[doc = ""]
